@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Career Details | CareerGuide AI</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="career-details.css">
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-compass"></i>
+            <span>CareerGuide <b>AI</b></span>
+        </a>
+
+        <nav>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+            <a href="careers.html" class="active">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Careers</span>
+            </a>
+
+            <a href="skills.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="roadmap.html">
+                <i class="fa-solid fa-route"></i>
+                <span>Roadmap</span>
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="ai-assistant.html">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="details-hero">
+
+        <div class="details-container">
+
+            <a href="careers.html" class="back-button">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Careers
+            </a>
+
+            <div class="career-detail-icon">
+                <i id="careerIcon" class="fa-solid fa-code"></i>
+            </div>
+
+            <span class="detail-label">
+                CAREER FIELD
+            </span>
+
+            <h1 id="careerTitle">
+                Software Development
+            </h1>
+
+            <p id="careerDescription">
+                Explore this career field, understand the required
+                skills and discover how you can start your journey.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- OVERVIEW -->
+
+    <section class="details-section">
+
+        <div class="details-container">
+
+            <div class="section-heading">
+                <span class="section-label">
+                    <i class="fa-solid fa-circle-info"></i>
+                    CAREER OVERVIEW
+                </span>
+
+                <h2 class="section-title">
+                    Understand The <span>Career</span>
+                </h2>
+            </div>
+
+
+            <div class="overview-box">
+
+                <h3>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    What is this career?
+                </h3>
+
+                <p id="careerOverview">
+                    Software development involves designing, building,
+                    testing and maintaining software applications that
+                    solve real-world problems.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER INFORMATION -->
+
+    <section class="details-section information-section">
+
+        <div class="details-container">
+
+            <div class="information-grid">
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <h3>Required Skills</h3>
+
+                    <ul id="careerSkills"></ul>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <h3>Technologies</h3>
+
+                    <ul id="careerTechnologies"></ul>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+
+                    <h3>Job Roles</h3>
+
+                    <ul id="careerRoles"></ul>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+
+                    <h3>Career Path</h3>
+
+                    <ul id="careerPath"></ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW TO START -->
+
+    <section class="details-section">
+
+        <div class="details-container">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    <i class="fa-solid fa-flag"></i>
+                    GET STARTED
+                </span>
+
+                <h2 class="section-title">
+                    How To Start Your <span>Journey?</span>
+                </h2>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <span>01</span>
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Learn Fundamentals</h3>
+                    <p id="stepOne">
+                        Start with the basic concepts of your chosen field.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>02</span>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Practice Skills</h3>
+                    <p id="stepTwo">
+                        Practice regularly and improve your technical skills.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>03</span>
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Build Projects</h3>
+                    <p id="stepThree">
+                        Create practical projects to apply what you learn.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>04</span>
+                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                    <h3>Keep Growing</h3>
+                    <p id="stepFour">
+                        Continue learning and explore career opportunities.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+
+    <section class="details-cta">
+
+        <div class="details-container">
+
+            <div class="cta-box">
+
+                <i class="fa-solid fa-route"></i>
+
+                <h2>
+                    Ready To Explore Your
+                    <span>Career Roadmap?</span>
+                </h2>
+
+                <p>
+                    Build the right skills and follow a structured
+                    learning path for your career goal.
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="roadmap.html" class="cta-btn">
+                        View Roadmap
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="skills.html" class="cta-btn secondary">
+                        Explore Skills
+                        <i class="fa-solid fa-code"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <p class="tech-stack">
+            Made with
+            <i class="fa-brands fa-html5"></i> HTML
+            <i class="fa-brands fa-css3-alt"></i> CSS
+            <i class="fa-brands fa-js"></i> JavaScript
+        </p>
+
+        <p class="made-by">
+            Made by <strong>Ayushree</strong>
+        </p>
+
+        <p class="copyright">
+            © 2026 CareerGuide AI. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="career-details.js"></script>
+<script src="auth-guard.js"></script>
+
+</body>
+</html>

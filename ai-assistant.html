@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Assistant | CareerGuide AI</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="common.css">
+
+    <!-- AI Assistant CSS -->
+    <link rel="stylesheet" href="ai-assistant.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <i class="fa-solid fa-compass"></i>
+
+            Career<span>Guide AI</span>
+
+        </a>
+
+
+        <nav>
+
+            <a href="index.html">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home</span>
+
+            </a>
+
+
+            <a href="about.html">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+                <span>About</span>
+
+            </a>
+
+
+            <a href="careers.html">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <span>Careers</span>
+
+            </a>
+
+
+            <a href="skills.html">
+
+                <i class="fa-solid fa-code"></i>
+
+                <span>Skills</span>
+
+            </a>
+
+
+            <a href="roadmap.html">
+
+                <i class="fa-solid fa-route"></i>
+
+                <span>Roadmap</span>
+
+            </a>
+
+
+            <a href="contact.html">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <span>Contact</span>
+
+            </a>
+
+
+            <a href="ai-assistant.html" class="active">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <span>AI Assistant</span>
+
+            </a>
+
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                <span>Login</span>
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<main class="ai-page">
+
+
+<!-- =========================================
+     AI HERO SECTION
+========================================= -->
+
+<section class="ai-hero">
+
+    <div class="container">
+
+        <div class="ai-badge">
+
+            <span class="status-dot"></span>
+
+            AI ASSISTANT
+
+        </div>
+
+
+        <h1>
+
+            Your Personal
+
+            <span>Career Guide</span>
+
+        </h1>
+
+
+        <p>
+
+            Ask questions about careers, skills,
+            roadmaps, education, technology and
+            your future.
+
+            CareerGuide AI is here to help you
+            plan your next step.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     CHAT SECTION START
+========================================= -->
+
+<section class="chat-section">
+
+    <div class="container">
+
+        <div class="chat-container">
+
+
+            <!-- CHAT HEADER -->
+
+            <div class="chat-header">
+
+                <div class="assistant-profile">
+
+                    <div class="assistant-avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            CareerGuide AI
+                        </h3>
+
+
+                        <p>
+
+                            <span class="online-dot"></span>
+
+                            Online • Ready to help
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="clear-chat"
+                    id="clearChat"
+                    title="Clear conversation"
+                >
+
+                    <i class="fa-solid fa-trash"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- CHAT BODY -->
+
+            <div
+                class="chat-body"
+                id="chatBody"
+            >
+            <!-- =========================================
+                     AI WELCOME MESSAGE
+                ========================================== -->
+
+                <div class="message ai-message">
+
+                    <div class="message-avatar">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+
+                    <div class="message-content">
+
+                        <div class="message-name">
+
+                            CareerGuide AI
+
+                        </div>
+
+
+                        <div class="message-bubble">
+
+                            <p>
+
+                                👋 Hello! I'm
+                                <strong>CareerGuide AI</strong>.
+
+                            </p>
+
+
+                            <p>
+
+                                I can help you explore careers,
+                                understand required skills,
+                                create learning roadmaps and
+                                answer questions about your
+                                career journey.
+
+                            </p>
+
+
+                            <p>
+
+                                You can also ask me questions
+                                about the <strong>CareerGuide AI
+                                project</strong>.
+
+                            </p>
+
+
+                            <p>
+
+                                What would you like to know?
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     QUICK QUESTIONS
+                ========================================== -->
+
+                <div class="quick-questions">
+
+                    <p>
+                        Try asking:
+                    </p>
+
+
+                    <div class="quick-buttons">
+
+
+                        <!-- QUICK QUESTION 1 -->
+
+                        <button
+                            class="quick-btn"
+                            data-question="What career is suitable for me?"
+                        >
+
+                            <i class="fa-solid fa-compass"></i>
+
+                            Find a Career
+
+                        </button>
+
+
+
+                        <!-- QUICK QUESTION 2 -->
+
+                        <button
+                            class="quick-btn"
+                            data-question="What skills do I need to become an AI engineer?"
+                        >
+
+                            <i class="fa-solid fa-brain"></i>
+
+                            AI Engineer Skills
+
+                        </button>
+
+
+
+                        <!-- QUICK QUESTION 3 -->
+
+                        <button
+                            class="quick-btn"
+                            data-question="Give me a roadmap for becoming a software engineer."
+                        >
+
+                            <i class="fa-solid fa-route"></i>
+
+                            Career Roadmap
+
+                        </button>
+
+
+
+                        <!-- QUICK QUESTION 4 -->
+
+                        <button
+                            class="quick-btn"
+                            data-question="What does CareerGuide AI do?"
+                        >
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            About Project
+
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =========================================
+                 TYPING INDICATOR
+            ========================================== -->
+
+            <div
+                class="typing-indicator"
+                id="typingIndicator"
+            >
+
+                <div class="message-avatar">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                </div>
+
+
+                <div class="typing-bubble">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================================
+                 CHAT INPUT AREA
+            ========================================== -->
+
+            <div class="chat-input-area">
+
+
+                <div class="input-box">
+
+
+                    <textarea
+                        id="userInput"
+                        rows="1"
+                        placeholder="Ask anything about careers, skills or roadmaps..."
+                        aria-label="Ask CareerGuide AI"
+                    ></textarea>
+
+
+                    <button
+                        id="sendButton"
+                        class="send-button"
+                        title="Send message"
+                    >
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+
+                </div>
+
+
+                <p class="input-note">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Career guidance should be considered
+                    alongside your own interests and goals.
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     WHAT CAN I ASK?
+========================================= -->
+
+<section class="ai-capabilities">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                WHAT CAN I ASK?
+            </span>
+
+            <h2 class="section-title">
+                Ask Me <span>Anything</span>
+            </h2>
+
+            <p class="section-text">
+                CareerGuide AI can help you understand
+                different aspects of your career journey.
+            </p>
+
+        </div>
+
+
+        <!-- Capabilities Grid -->
+
+        <div class="capabilities-grid">
+
+            <!-- Career Exploration -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <h3>Career Exploration</h3>
+
+                <p>
+                    Explore different career options based
+                    on your interests, goals and skills.
+                </p>
+
+            </div>
+
+
+            <!-- Skills -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Skills</h3>
+
+                <p>
+                    Learn which technical and soft skills
+                    are useful for your chosen career.
+                </p>
+
+            </div>
+
+
+            <!-- Roadmaps -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+
+                <h3>Roadmaps</h3>
+
+                <p>
+                    Get step-by-step learning roadmaps
+                    for different technology careers.
+                </p>
+
+            </div>
+
+
+            <!-- Education -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <h3>Education</h3>
+
+                <p>
+                    Understand courses, learning paths
+                    and educational requirements.
+                </p>
+
+            </div>
+
+
+            <!-- Technology -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <h3>Technology</h3>
+
+                <p>
+                    Ask questions about programming,
+                    AI, machine learning and web development.
+                </p>
+
+            </div>
+
+
+            <!-- Career Advice -->
+
+            <div class="capability-card">
+
+                <div class="capability-icon">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+
+                <h3>Career Advice</h3>
+
+                <p>
+                    Get simple guidance to help you
+                    understand your next career step.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     AI CALL TO ACTION
+========================================= -->
+
+<section class="ai-cta">
+
+    <div class="container">
+
+        <div class="ai-cta-box">
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+
+
+            <div class="cta-content">
+
+                <h2>
+                    Not Sure Where To Start?
+                </h2>
+
+                <p>
+                    Tell CareerGuide AI about your interests,
+                    skills and goals, and start exploring
+                    possible career directions.
+                </p>
+
+            </div>
+
+
+            <button class="btn btn-primary" id="startChat">
+
+                <i class="fa-solid fa-comments"></i>
+
+                Start Chatting
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <!-- Footer About -->
+
+            <div class="footer-column">
+
+                <a href="index.html" class="logo">
+
+                    <i class="fa-solid fa-compass"></i>
+
+                    Career<span>Guide AI</span>
+
+                </a>
+
+                <p>
+                    Your smart career companion for
+                    exploring careers, developing skills
+                    and planning your future.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="skills.html">Skills</a>
+
+            </div>
+
+
+            <!-- Resources -->
+
+            <div class="footer-column">
+
+                <h3>Resources</h3>
+
+                <a href="roadmap.html">Roadmaps</a>
+                <a href="ai-assistant.html">AI Assistant</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Connect</h3>
+
+                <p>
+                    Have questions about your career?
+                    Start a conversation with
+                    CareerGuide AI.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CareerGuide AI. All rights reserved.
+            </p>
+
+            <p>
+                Made with <i class="fa-solid fa-heart"></i>
+                for better career guidance.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+<script src="ai-assistant.js"></script>
+
+</body>
+
+</html>

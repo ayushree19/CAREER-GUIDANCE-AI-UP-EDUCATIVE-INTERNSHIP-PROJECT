@@ -1,0 +1,357 @@
+/* =========================================
+   CAREERGUIDE AI - COMMON CSS
+   LEFT SIDEBAR NAVIGATION
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+
+    padding-left: 250px;
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 250px;
+    height: 100vh;
+
+    z-index: 9999;
+}
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 28px 18px;
+
+    background: #07111f;
+
+    border-right: 1px solid rgba(0, 255, 204, 0.25);
+
+    box-shadow:
+        5px 0 25px rgba(0, 255, 204, 0.08);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 6px;
+
+    margin-bottom: 35px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.navbar .logo i {
+    color: #00ffcc;
+
+    font-size: 24px;
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(0, 255, 204, 0.45)
+        );
+}
+
+.navbar .logo span {
+    color: #00ffcc;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    width: 100%;
+}
+
+.navbar nav a {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border-radius: 9px;
+
+    color: #b9c7d0;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================
+   NAV ICONS
+========================================= */
+
+.navbar nav a i {
+    width: 20px;
+
+    text-align: center;
+
+    color: #9eacb6;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.navbar nav a:hover {
+    color: #00ffcc;
+
+    background:
+        rgba(0, 255, 204, 0.07);
+
+    transform: translateX(4px);
+}
+
+.navbar nav a:hover i {
+    color: #00ffcc;
+}
+
+
+/* =========================================
+   ACTIVE PAGE
+========================================= */
+
+.navbar nav a.active {
+    color: #00ffcc;
+
+    background:
+        rgba(0, 255, 204, 0.10);
+
+    border-left: 3px solid #00ffcc;
+
+    box-shadow:
+        0 0 15px
+        rgba(0, 255, 204, 0.05);
+}
+
+.navbar nav a.active i {
+    color: #00ffcc;
+}
+
+
+/* =========================================
+   COMMON LINKS
+========================================= */
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    width: 100%;
+
+    border-top:
+        1px solid
+        rgba(0, 255, 204, 0.12);
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #07111f;
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        rgba(0, 255, 204, 0.35);
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffcc;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    body {
+        padding-left: 0;
+        padding-top: 75px;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 70px;
+
+        flex-direction: row;
+        align-items: center;
+
+        padding: 0 18px;
+
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            rgba(0, 255, 204, 0.25);
+    }
+
+    .navbar .logo {
+        margin: 0;
+    }
+
+    .navbar nav {
+        flex-direction: row;
+
+        justify-content: flex-end;
+
+        align-items: center;
+
+        gap: 3px;
+    }
+
+    .navbar nav a {
+        width: auto;
+
+        padding: 10px;
+    }
+
+    .navbar nav a span {
+        display: none;
+    }
+
+    .navbar nav a i {
+        margin: 0;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 120px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .navbar {
+        height: auto;
+
+        min-height: 70px;
+
+        flex-direction: column;
+
+        padding: 14px;
+    }
+
+    .navbar .logo {
+        justify-content: center;
+
+        margin-bottom: 12px;
+    }
+
+    .navbar nav {
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        gap: 5px;
+    }
+
+    .navbar nav a {
+        justify-content: center;
+
+        padding: 9px 5px;
+    }
+}

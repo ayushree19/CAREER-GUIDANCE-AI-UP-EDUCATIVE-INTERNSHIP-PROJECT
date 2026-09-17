@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CareerGuide AI</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Signup CSS -->
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-compass"></i>
+            <span>CareerGuide <b>AI</b></span>
+        </a>
+
+        <nav>
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>About</span>
+            </a>
+
+            <a href="careers.html">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Careers</span>
+            </a>
+
+            <a href="skills.html">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="roadmap.html">
+                <i class="fa-solid fa-route"></i>
+                <span>Roadmap</span>
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="ai-assistant.html">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+            </a>
+
+            <a href="login.html" class="active">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Login</span>
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="signup-page">
+
+    <!-- LEFT CONTENT -->
+    <section class="signup-info">
+
+        <div class="brand">
+            <i class="fa-solid fa-compass"></i>
+            <span>CareerGuide AI</span>
+        </div>
+
+        <div class="welcome-tag">
+            <i class="fa-solid fa-sparkles"></i>
+            Start Your Journey
+        </div>
+
+        <h1>
+            Build Your
+            <span>Career Future</span>
+        </h1>
+
+        <p class="intro-text">
+            Create your CareerGuide AI account and take the first step
+            toward making better career decisions with personalized
+            guidance, useful skills and structured roadmaps.
+        </p>
+
+
+        <!-- FEATURES -->
+        <div class="signup-features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-route"></i>
+                </div>
+
+                <div>
+                    <h3>Career Roadmaps</h3>
+                    <p>
+                        Follow structured paths and understand
+                        what to learn next.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <div>
+                    <h3>AI Career Guidance</h3>
+                    <p>
+                        Explore career options according to your
+                        interests and goals.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div>
+                    <h3>Skill Development</h3>
+                    <p>
+                        Discover important skills and improve
+                        your career readiness.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT CONTENT -->
+    <section class="signup-box">
+
+        <div class="signup-card">
+
+            <div class="card-header">
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <div class="form-step">
+                    <span></span>
+                    Create Profile
+                </div>
+
+                <h2>Create Account</h2>
+
+                <p>
+                    Join CareerGuide AI and start planning your future.
+                </p>
+
+            </div>
+
+
+            <!-- SIGNUP FORM -->
+            <form id="signupForm">
+
+                <!-- FULL NAME -->
+                <div class="input-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="togglePassword"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONFIRM PASSWORD -->
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="toggleConfirmPassword"
+                            aria-label="Show password"
+                        >
+                            <i class="fa-solid fa-eye"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TERMS -->
+                <div class="terms-row">
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                        >
+
+                        <span>
+                            I agree to the
+                            <a href="#" onclick="return false;">
+                                Terms & Conditions
+                            </a>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+                <div
+                    id="signupMessage"
+                    class="signup-message"
+                ></div>
+
+
+                <!-- CREATE ACCOUNT -->
+                <button
+                    type="submit"
+                    class="signup-btn"
+                >
+                    <i class="fa-solid fa-user-plus"></i>
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <!-- LOGIN -->
+            <div class="login-link">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a href="login.html">
+                    Sign In
+                </a>
+
+            </div>
+
+
+            <!-- SECURITY -->
+            <div class="security-note">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+                    Your account information is stored securely
+                    for this demo project.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="signup-footer">
+
+    <p>
+        Made with HTML • CSS • JavaScript
+    </p>
+
+    <p>
+        Made by Ayushree
+    </p>
+
+    <p>
+        © 2026 CareerGuide AI. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- SIGNUP JAVASCRIPT -->
+<script src="signup.js"></script>
+
+</body>
+</html>
