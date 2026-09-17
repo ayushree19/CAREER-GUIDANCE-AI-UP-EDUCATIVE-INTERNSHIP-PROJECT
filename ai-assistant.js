@@ -111,10 +111,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
             console.log("Sending request to backend...");
 
-            const response = await fetch("https://career-guid-ai.onrender.com/api/chat", {
+            // Agar frontend aur backend same service par hain, toh bas "/api/chat" use karein.
+            // Agar alag hain, toh sahi backend URL daalein.
+            const API_URL = window.location.origin.includes("onrender.com") 
+                ? "/api/chat" 
+                : "https://career-guidance-ai-up-educative-i1rj.onrender.com/api/chat";
+
+            const response = await fetch(API_URL, {
                 method: "POST",
+                mode: "cors",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
                 },
                 body: JSON.stringify({
                     message: question
