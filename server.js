@@ -6,6 +6,8 @@ const path = require("path");
 const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
+app.use(cors());
+app.use(express.json());
 
 // Render provides PORT automatically.
 // Local development will use 3000.
