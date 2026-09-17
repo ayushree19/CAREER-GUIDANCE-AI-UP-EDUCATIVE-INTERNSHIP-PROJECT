@@ -6,7 +6,17 @@ const path = require("path");
 const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
-app.use(cors());
+
+// CORS explicit configuration
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+// Preflight requests ke liye explicit handler
+app.options('*', cors());
+
 app.use(express.json());
 
 // Render provides PORT automatically.
