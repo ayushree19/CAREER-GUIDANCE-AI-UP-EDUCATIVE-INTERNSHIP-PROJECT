@@ -7,12 +7,10 @@ const { GoogleGenAI } = require("@google/genai");
 
 const app = express();
 
-// CORS explicit configuration
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
-}));
+// Simple aur safe CORS (Preflight automatically handle karta hai)
+app.use(cors());
+
+app.use(express.json());
 
 // Preflight requests ke liye explicit handler
 app.options('*', cors());
