@@ -12,10 +12,6 @@ app.use(cors());
 
 app.use(express.json());
 
-// Preflight requests ke liye explicit handler
-app.options('*', cors());
-
-app.use(express.json());
 
 // Render provides PORT automatically.
 // Local development will use 3000.
