@@ -76,10 +76,12 @@ app.post("/api/chat", async (req, res) => {
         }
 
         const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash",
-            contents: message.trim()
+            model: "gemini-3.8-flash",
+            contents: question,
+            config: {
+                systemInstruction: SYSTEM_PROMPT
+            }
         });
-
         const reply = response.text;
 
         if (!reply) {
