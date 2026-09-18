@@ -75,9 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
         showTyping();
 
         try {
-            const API_URL = window.location.origin.includes("onrender.com") 
-                ? "/api/chat" 
-                : "https://career-guidance-ai-up-educative-i1rj.onrender.com/api/chat";
+           const API_URL = window.location.origin.includes("onrender.com") 
+            ? "/api/chat" 
+            : "https://career-guide-ai-xfis.onrender.com/api/chat";
 
             const controller = new AbortController();
             const timeoutId = setTimeout(() => controller.abort(), 60000); // 60s timeout for Render cold start
